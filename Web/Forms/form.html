@@ -1,0 +1,55 @@
+<html>
+
+<head>
+</head>
+
+<body>
+	<p></p>
+	<h2>A simple form ...</h2>
+	<p></p>
+	<hr />
+	
+	<table align="center" bgcolor="lightgrey" border="2">
+		<tbody>
+		<tr>
+			<td>
+				<form method="post" action="mailto:youremail@email.com">
+					First Name: <input size="10" maxlength="40" name="fname" type="text" /> <br /><br /> 
+					Last Name: <input size="10" maxlength="40" name="lname" type="text" /> <br /><br /> 
+					Address: <input size="20" maxlength="40" name="address" type="text" /> <br /><hr />
+					Email: <input size="20" maxlength="40" name="email" type="email" /> <br /><hr />
+					CV: <input size="20" maxlength="40" name="cv" type="file" /> <br /><hr />
+					
+					<!-- Radio Buttons --> 
+					<input name="sex" value="male" type="radio" /> Male | 
+					<input name="sex" value="female" type="radio" /> Female <br /><hr />
+					
+					<!-- Check Box --> 
+					<input name="vehicle" value="Bike" type="checkbox" /> I have a bike <br /> 
+					<input name="vehicle" value="Car" type="checkbox" /> I have a car <br />
+					<input name="vehicle" value="Boat" type="checkbox" /> I have a boat <br /> 
+					<input name="vehicle" value="Aiplane" type="checkbox" /> I have an airplane <br />
+					
+					
+					<hr />Password: <input size="10" maxlength="10" name="password" type="password" /><hr />
+					
+					<!-- Drop down list --> 
+					<select name="cars"> 
+						<option value="volvo">Volvo</option> 
+						<option value="saab">Saab</option> 
+						<option value="fiat">Fiat</option> 
+						<option value="audi">Audi</option> 
+					</select>
+					
+					<br /><hr />
+					
+					<input value="Hit it" type="submit" />
+				</form>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<hr />
+</body>
+
+</html>
