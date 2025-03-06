@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" user-scalable="no">
+    <title>PF</title>
+    <link rel="stylesheet" href="PF.css">
+</head>
+<header id = "header">Programming Foundations
+<input style = "font-size:medium; position:relative;"  type = "button" id = "alert" type="button" value="Welcome" onclick = "dochange()"></header>
+<h1 class = "weeks">Week 1</h1>
+<h1 class = "weekhead">My Intrests</h1>
+<section style="display:inline-block" >
+    
+    <div id = "intrest1" style = "display:inline-flex; flex-direction: column; text-align: center; ">
+    <h2>My Favorite Hobbies</h2>
+    <p>My Favorite Hobbies are: Playing chess, Practicing Piano, and Reading.</p>
+    <img id = "foodimg" style = "align-self:center; margin-left: -3px;" src ="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2NoZXNzLTQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9LCJ0b0Zvcm1hdCI6ImF2aWYifX0=">
+</div>
+<div id = "intrest2" style = "display:inline-flex; text-align: center; flex-direction: column; align-items: center;">
+    <h2>My Music Taste</h2>
+    <p>The type of music I like to listen to is Gospel and Lo-fi.</p>
+    <img id = "artistimg" style = "margin-left: 25px;" src ="https://cdn.pixabay.com/photo/2022/09/24/17/31/abstract-7476913__340.png" >
+</div>
+<input id = "color" class = "button1" type="button" value = "changecolor" onclick="intrestcolor()">
+</section>
+
+<div id = "info1" style=" position:relative;">
+    <p  style="font-size: 20px;">
+    </p>
+</div>
+<div><h2>Top 5 Greatest NBA players</h2>
+    <p class = "break"> </p>
+    <ol >
+    <li>Lebron James</li>
+
+    <li>Michael Jordan</li>
+
+    <li>Kareem-Abdul Jabbar</li>
+
+    <li>Bill Russell</li>
+
+    <li>Steph Curry</li>
+    </ol>
+</div>
+<p class = "break"> </p>
+<div id = "table">
+    <table>
+    <tr>
+        <th>Foods I Like</th>
+        <th>Least Favorite Foods</th>
+    </tr>
+    <tr>
+        <td>Flavored Pretzels</td>
+        <td>Kettle Corn Chips</td>
+    </tr>
+    <tr>
+        <td>French Fries </td>
+        <td>Raisins</td>
+    </tr>
+    <tr>
+        <td>Apple Pie</td>
+        <td>Okra</td>
+        
+    </tr>
+
+    </table>
+</div>
+<h1 id="myHeader">TO-DO List</h1>
+
+<input id = "Addbutton" type="button" value="Add" onclick="addTask()">
+<input id = "input" type = "text" placeholder="Enter a task...">
+
+ <hr>
+
+<ul id="tasks">
+
+  <li id = "li1">
+
+    <input style = "margin-left:-5px" type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+
+    <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+
+    example task
+
+  </li>
+
+ </ul>
+
+<hr>
+
+<div id = "divabout">
+<input type="button" value="About" onclick="doAbout()">
+<input type ="button" value = "Clear" onclick = "clearAbout()">
+</div>
+<p class = "break"> </p>
+<div>
+<h2 id = "canhead">Canvas's!</h2>
+
+<div style="position: relative; right: -240px">
+<canvas style = "left:150px"id = "canvas1" class="can1"></canvas>
+
+<input type = "button" class = "button1" value="LightBlue" onclick="dolightblue()">
+<input type = "button" class = "button1" value="Gray" onclick="dogray()">
+<input style = "right:100px" id  = "clr" type = "color" class = "button1" value = "0000FF" onchange="docolor()">
+
+<canvas id = "canvas2" class = "can1"></canvas>
+<span><input id = "sldr" type = "range" min="0"  max = "300" oninput="dosquare()"></span>
+
+<canvas style = "margin-left: 250px"id = "canvas3" class = "can1"></canvas>
+<span><input type = "file" multiple = "false" accept="image/*" id = "finput" onchange="onUpload()"></span>
+<span id = "spanhead">Images</span>
+<span><input type = "button" class = "button1" value = "MakeGray" id ="gray" onclick = "doGray()"></span></div>
+
+<p class = "break"> </p>
+<h2 id = "canhead">Green Screen!</h2>
+<p style = "font-size: 17px; background-color: red; width:fit-content">Note: Foreground images must have a green background("like a green screen"). Choose a background
+in the canvas next to foreground.
+</p>
+
+<div>
+<div style="position: relative; right: -270px"><canvas style = "position:relative; margin-left: 139px; left: -135px;" class = "gscan" id = "canvas4"></canvas>
+<span  id = "fgimgspan">Foreground Image</span>
+<canvas style = "position:relative; left: 5px"class = "gscan" id = "canvas5"></canvas>
+
+<div style="display: block"><span><input class = "finp" id = "fgfile"  type = "file" value = "foregroundimage" onchange="loadfgimg()"></span>
+<span><input class = "binp" id = "bgfile" type = "file" value = "backgroundimage" onchange="loadbgimg()"></span></div>
+
+
+
+<div style="display: block; position: relative; left: 300px;"><input type = "button" class = "button1" value = "CreateImage" onclick="greenscreen()">
+<input type = "button" class = "button1" value = "ClearImages" onclick="ClearCanvas()"></div>
+
+</div>
+
+<script src = "https://www.dukelearntoprogram.com//course1/common/js/image/SimpleImage.js"></script>
+<script src = "PF.js"></script>
