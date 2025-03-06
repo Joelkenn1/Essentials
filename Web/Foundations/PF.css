@@ -1,0 +1,256 @@
+body {
+    background-color: whitesmoke;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.button1 {
+    background-color: rgba(255, 255, 255, 0.459);
+    border-radius: 13%;
+    color: black;
+    padding: 7px;
+    font-family: Geneva  ;
+}
+
+#header {
+    text-align: left;
+    background-color: black;
+    color: white;
+    position: relative;
+    padding: 30px;
+    font-size: 50px;
+    top: -21px;
+    width: 160%;
+    margin-left: -30px;
+
+}
+
+.weeks {
+    position: relative;
+    border: black solid 10px;
+    margin-left: 25px;
+    width: 12%;
+    padding: 15px;
+    top: -10px;
+}
+
+.weekhead{
+    position: relative;
+    border: black solid 5px;
+    border-radius: 10px;
+    font-size: 45px;
+    width: fit-content;
+    margin-bottom: 55px;
+    left:550px;
+    top: -57px;
+    padding: 15px;
+    padding-bottom:30px;
+    height:30px;
+    
+}
+
+#intrest1 {
+    position: relative;
+    margin-left: 15px;
+    margin-right: 30px;
+    top: -70px;
+    float: left;
+    border: black solid 2px;
+    padding: 7px;
+}
+
+p {
+    font-size: 19px;
+    font-family: Haettenschweiler;
+}
+
+#intrest2 {
+    position: relative;
+    margin-right: -5px;
+    margin-left: 35px;
+    top: -70px;
+    float: right;
+    border: black solid 2px;
+    padding: 5px;
+    padding-right: 20px;
+}
+ #foodimg {
+     width: 250px;
+     height: 250px;
+     margin-top: 20px;
+     margin-left: 150px;
+     border: orange dotted 3px;
+ }
+
+ #artistimg {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 150px;
+    border: lightgray solid 3px;
+ }
+ 
+ li {
+     font-size: 25px;
+     position: relative;
+     top:-10px;
+ }
+ .break {
+     border: solid 1px black;
+     width: 160%;
+ }
+
+ #table {
+     text-align: center;
+ }
+
+ th{
+     font-size: 28px;
+     border: solid 1px black;
+ }
+
+ td {
+    border: solid 1px black;
+    font-size: 23px;
+ }
+ #alert {
+     right: -490px;
+     position: relative;
+
+ }
+ .orangebackground{
+     background-color: coral;
+ }
+.bluebackground{
+    background-color: lightblue;
+}
+#info1 {
+    position: relative;
+}
+#color {
+    position: relative;
+    top: -85px;
+}
+
+ul {
+    padding-left: 0;
+ }
+ 
+ /* Step 3 below here */
+ 
+ #li1 {
+    list-style-type: none;
+    background-color: #eee;
+    border: 1px solid #c3c3c3;
+    padding: 10px 0px 10px 5px;
+    font-size: 20px;
+ }
+ 
+ 
+ /* Step 5 below here */
+ 
+ .done {
+    background-color: green;
+ }
+ 
+ .remove {
+     background-color: red;
+ }
+ 
+ li.finished {
+    color:black;
+    background-color: gray;
+    text-decoration: line-through;
+ }
+ 
+ input[type="text"] {
+    font-size: 18px;
+    width: 94%;
+    padding: 10px;
+ }
+ 
+ input[type="button"] {
+    font-size: large;
+ }
+ 
+ #addButton {
+    padding: 10px;
+ }
+ 
+ /* Step 10 below here */
+ 
+ .aboutcolor {
+     background-color: yellow;
+     width: fit-content;
+ 
+ }
+ 
+ /* Step 12 below here */
+ 
+ #divabout {
+     font-size: medium;
+     margin: 10px;
+     width:250px;
+ 
+ }
+
+ .can1 {
+     width:270px;
+     height:270px;
+     border: 2px solid black;
+     margin-top: 5px;
+ }
+
+ #spanhead {
+     text-align: right;
+     position: relative; 
+     left: -240px;
+     bottom: 200px; 
+     font-size: 20px;
+     background-color: lightgreen; 
+     border: solid 3px black;
+ }
+ #gray {
+     position: relative;
+     bottom: 70px;
+     left: -310px;
+ }
+ .gscan {
+    width:270px;
+    height:270px;
+    border: 2px solid black;
+    margin-top: 5px;
+}
+ #canhead{
+     font-size: 50px;
+     position: relative;
+     text-align: left;
+ }
+ .finp{
+    position:relative; 
+    left: 270px; 
+    bottom: -1px;
+ }
+ .binp {
+    position:relative; 
+    bottom: -1px; 
+    left: 255px;
+ }
+ #bgimgspan{
+        right: 67px;
+        bottom:100px;
+        font-size: 20px;
+        background-color: lime;
+        border: solid 1px black;
+     }
+#fgimgspan {
+    position: relative;
+    left: -137px;
+    bottom:100px;
+    font-size: 20px;
+    background-color: lime;
+    border: solid 1px black;
+     }
+
+ 
